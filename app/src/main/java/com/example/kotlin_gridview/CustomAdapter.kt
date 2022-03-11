@@ -8,16 +8,6 @@ import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
 
-/**
- * Created by root on 3/23/18.
- */
-/*We Have Created Constructor of Custom Adapter and Pass
-                context
-                ArrayList<Int> which Contain images
-                Array which contain name*/
-
-//Here We extend over Adapter With BaseAdapter()
-
 
 class CustomAdapter(context: Context, arrayListImage: ArrayList<Int>, name: Array<String>) : BaseAdapter() {
 
