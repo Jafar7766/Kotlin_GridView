@@ -11,8 +11,6 @@ import android.widget.TextView
 
 class CustomAdapter(context: Context, arrayListImage: ArrayList<Int>, name: Array<String>) : BaseAdapter() {
 
-    //Passing Values to Local Variables
-
     var context = context
     var arrayListImage = arrayListImage
     var name = name
@@ -23,7 +21,6 @@ class CustomAdapter(context: Context, arrayListImage: ArrayList<Int>, name: Arra
 
         var myView = convertView
         var holder: ViewHolder
-
 
         if (myView == null) {
 
@@ -38,13 +35,6 @@ class CustomAdapter(context: Context, arrayListImage: ArrayList<Int>, name: Arra
 
             holder = ViewHolder()
 
-
-            //Find view By Id For all our Widget taken in grid_item.
-
-            /*Here !! are use for non-null asserted two prevent From null.
-             you can also use Only Safe (?.)
-
-            */
 
 
             holder.mImageView = myView!!.findViewById<ImageView>(R.id.imageView) as ImageView
